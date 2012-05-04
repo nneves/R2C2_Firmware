@@ -1159,6 +1159,13 @@ eParseResult process_gcode_command()
         print_config();
       }
       break;
+
+      // M666 - NNeves custom
+      case 666:
+      {
+        serial_writestr("R2C2-FreeRTOS Demo 04-05-2012 V001");
+      }
+      break;      
       
       // unknown mcode: spit an error
       default:

@@ -94,10 +94,8 @@ int main(void)
   in case the user application uses interrupts */
   SCB->VTOR = (USER_FLASH_START & 0x1FFFFF80);
 
-#ifdef UARTDEBUG
   uart_init();
-  DBG ("init\n");
-#endif 
+  DBG ("Initialize-AppMain()\r\n");
 
   app_main ();
 
