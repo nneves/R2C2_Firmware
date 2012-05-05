@@ -8,21 +8,33 @@ steps_per_mm_z = 6400
 steps_per_mm_e = 36
 
 # Max feed rate of the machine
+# 5000mm/s --> 300000
+# 2000mm/s --> 120000
+# 1500mm/s --> 90000
+# 1000mm/s --> 60000
+# 500mm/s --> 30000
+# 150mm/s --> 9000
+
 maximum_feedrate_x = 6000
 maximum_feedrate_y = 6000
 maximum_feedrate_z = 60
 maximum_feedrate_e = 6000
 
 # very slow speed for fine search
-search_feedrate_x = 120
-search_feedrate_y = 120
+search_feedrate_x = 240
+search_feedrate_y = 240
 search_feedrate_z = 60
 search_feedrate_e = 1600
 
 # slow speed for initial search
-homing_feedrate_x = 1200
-homing_feedrate_y = 1200
+homing_feedrate_x = 2400
+homing_feedrate_y = 2400
 homing_feedrate_z = 60
+
+# acceleration settings
+# Good for normal prints: acceleration = 3500
+acceleration = 3500
+junction_deviation = 0.05
 
 # direction of travel to find "home" endstop
 # +1 = move in positive, -1 = move negative
@@ -41,7 +53,7 @@ rest_pos_x = 0
 rest_pos_y = 0
 
 # set to 1 if there is a rest position, e.g. at end print, temperature wait
-have_rest_pos = 1
+have_rest_pos = 0
 rest_pos_x = 120	
 rest_pos_y = 120
 
@@ -51,10 +63,10 @@ wipe_pos_x = 0
 wipe_pos_y = 0
 
 # size of print area 
-printing_vol_x = 120
-printing_vol_y = 120
-printing_vol_z = 85
+printing_vol_x = 600
+printing_vol_y = 600
+printing_vol_z = 150
 
 # options
-wait_on_temp = 1
+wait_on_temp = 0
 
