@@ -1,6 +1,8 @@
 # Config file for RepRap machines
 # Tested on a RepRap Mendel with a Wade Extruder
 
+# NNEVES custom configurations
+
 # Number of step for each milimeter
 steps_per_mm_x = 80
 steps_per_mm_y = 80
